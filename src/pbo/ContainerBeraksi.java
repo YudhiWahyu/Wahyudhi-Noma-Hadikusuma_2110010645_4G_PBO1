@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ContainerBeraksi {
     public static void main(String[] args) {  
     Scanner scanner = new Scanner(System.in);
-    ContainerInfo[] containers = new ContainerInfo[1];
+    ContainerInfo[] containers = new ContainerInfo[2];
     
     for (int i = 0; i < containers.length; i++){
         try {
