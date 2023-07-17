@@ -5,7 +5,6 @@ public class ContainerInfo extends Container {
     //--(overrding)
     public ContainerInfo(String isiBox, String merk, String berat, String warna) {
         super(isiBox, merk, berat, warna);
-        System.out.println("");
     }
     
     public String getKodeIsiBox (){

@@ -14,7 +14,7 @@ protected String warna;
         this.warna = warna;
     }
 
-    //--ACCESSOR
+    //--MUTATOR
     public void setisiBox(String isiBox) {
         this.isiBox = isiBox;
     }
@@ -31,7 +31,7 @@ protected String warna;
         this.warna = warna;
     }
 
-    //--MUTATOR
+    //--ACCESSCOR
     public String getisiBox() {
         return isiBox;
     }

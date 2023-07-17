@@ -46,7 +46,7 @@ public class ContainerBeraksi {
             System.out.println("Kode Box   : " +containers[i].getKodeIsiBox());
             System.out.println("Kode Merk  : " +containers[i].getKodemerk());
             System.out.println("Berat Box  : " +containers[i].getKodeBerat());
-            System.out.println("Kode Box   : " +containers[i].getWarna());
+            System.out.println("Warna Box  : " +containers[i].getWarna());
             
             System.out.println("Kode Kontainer Untuk Pengiriman : "+containers[i].getKodeIsiBox()+containers[i].getKodemerk()+containers[i].getWarna());    
             System.out.println("==============================");
