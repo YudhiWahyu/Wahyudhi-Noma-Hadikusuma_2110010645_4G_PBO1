@@ -52,7 +52,7 @@ public class ContainerInfo extends Container {
         return "Isi Box          : "+getisiBox()+
                 "\nMerk Container   : "+getMerk()+
                 "\nBerat Container  : "+getBerat()+
-                "\nBerat Container  : "+getWarna()+
+                "\nWarna Container  : "+getWarna()+
                 "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
 }
 }

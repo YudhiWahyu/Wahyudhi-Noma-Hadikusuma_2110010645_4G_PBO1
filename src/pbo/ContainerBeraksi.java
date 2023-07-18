@@ -31,13 +31,18 @@ public class ContainerBeraksi {
         System.out.print("Warna : ");
             String warna = scanner.nextLine();
             
-            containers[i] = new ContainerInfo(isiBox, merk, berat, warna);
-        } finally {
-                System.out.println("PENGISIAN FORM BOX CONTAINER SUKSES");
-                  }
+            if (isiBox.isEmpty() || berat.isEmpty() || merk.isEmpty() || warna.isEmpty()) {
+                    throw new Exception("FORM TIDAK BOLEH KOSONG");
+            }
+
+        containers[i] = new ContainerInfo(isiBox, merk, berat, warna);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                System.out.println("PENGISIAN FORM BOX CONTAINER GAGAL");}
         }
     
     for (int i = 0; i < containers.length; i++) {
+        if (containers[i] != null) {
             System.out.println("");
             System.out.println("==============================");
             System.out.println("Data Container ke-" + (i+1));
@@ -50,6 +55,7 @@ public class ContainerBeraksi {
             
             System.out.println("Kode Kontainer Untuk Pengiriman : "+containers[i].getKodeIsiBox()+containers[i].getKodemerk()+containers[i].getWarna());    
             System.out.println("==============================");
+    }
     }
     
         System.out.println("#SUKSES#");    
