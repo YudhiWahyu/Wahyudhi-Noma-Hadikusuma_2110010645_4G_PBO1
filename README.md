@@ -174,34 +174,8 @@ public String getWarna() {
 11. **Perulangan** adalah statement kontrol yang digunakan untuk menjalankan blok kode berulang kali. Pada kode ini, digunakan loop `for` untuk meminta input dan menampilkan data.
 
 ```bash
-    public String getKodemerk(){
-        String Kodemerk = getMerk().substring(0, 2);
-        
-        switch (Kodemerk) {
-            case "HY" :
-                return "HYU";
-            case "DO" :
-                return "DON";
-            case "HA" :
-                return "HAM";
-            default :
-                System.out.println("Tidak ada kode merk Kontainer");
-        }
-        return null;
-    }
-    
-    public String getKodeBerat (){
-        String kodeBerat = getBerat().substring(0, 2);
-        
-        if (kodeBerat.equals("20")) {
-               return "20.000 KG";
-        } else {
-        if (kodeBerat.equals("27")) {
-               return "27.000 KG";
-        } else {
-        } return "30.000 KG";
-            
-        }
+    for (int i = 0; i < containers.length; i++){
+     ....
     }
 ```
 
